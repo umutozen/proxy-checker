@@ -9,7 +9,7 @@ def get_proxies():
     return proxies
 
 def make_request_using_proxy(proxy):
-    url = "http://httpbin.org/get" # Target URL
+    url = "http://httpbin.org/get"
     proxies = {
         "http": f"http://{proxy}",
         "https": f"https://{proxy}",
